@@ -1,4 +1,4 @@
-# e-commerce-back-end
+# social-network-api
 
 ## Description
 
@@ -10,13 +10,16 @@ The best way to use this program is to use Insomnia! In Insomnia, you are able t
 
 Here are the routes you can use for this program!
 
+NOTE: FOR ANYTHING IN (), REPLACE THE () AS WELL AS MESSAGE INSIDE!
+
 GET: localhost:3001/api/users - To view all users
 GET: localhost:3001/api/thoughts - To view all thoughts
 GET: localhost:3001/api/thoughts/(THOUGHTSID) - To view the thought related to the ID
 
 NOTE: FOR POSTS, REPLACE THE () AS WELL AS MESSAGE INSIDE
 
-POST: localhost:3001/api/users - To post new users
+POST: localhost:3001/api/users - To create a user
+
 
  {  
       "username": "(PUT USERNAME HERE)",
@@ -34,12 +37,15 @@ POST: localhost:3001/api/thoughts/(THOUGHTSID)/reactions - To post a reaction to
 
  {  
       "reactionBody": "(PUT REACTION HERE)",
-      "username": "(PUT USERNAME WITH THE THOUGHTID HERE)"
+      "username": "(PUT USERNAME WITH THE REACTION HERE)"
   }
+
+POST: localhost:3001/users/(USERID)/friends/(FRIENDID TO ADD) - To add a friend to a user
 
 DELETE: localhost:3001/api/users/(USERID) - Deletes a user
 DELETE: localhost:3001/api/thoughts/(THOUGHTID) - Deletes a thought
 DELETE: localhost:3001/api/thoughts/(THOUGHTSID)/reactions/(REACTIONID) - Deletes a reaction
+DELETE: localhost:3001/users/(USERID)/friends/(FRIENDID TO ADD) - To delete a friend to a user
 
 
 <img src="./assets/images/image.jpg"/>
