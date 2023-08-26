@@ -56,7 +56,7 @@ DELETE: localhost:3001/users/(USERID)/friends/(FRIENDID TO ADD) - To delete a fr
 
 You can view this video to see how it works here!
 
-(VIDEO HERE)
+https://drive.google.com/file/d/1-YLfuCUTOca7NS0jxuNdX_CUlZ4nQdux/view
 
 You can visit the repo on my github here!
 
